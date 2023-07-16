@@ -1,0 +1,579 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{0F60B7FE-81E6-3BBC-AF1C-D74B11A19FA8}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>vk_sample</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">F:\Works\2023\NVIDIAImageScaling\samples\bin\VK\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">vk_sample.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">vk_sample</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">F:\Works\2023\NVIDIAImageScaling\samples\bin\VK\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">vk_sample.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">vk_sample</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">F:\Works\2023\NVIDIAImageScaling\samples\bin\VK\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">vk_sample.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">vk_sample</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">F:\Works\2023\NVIDIAImageScaling\samples\bin\VK\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">vk_sample.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">vk_sample</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>F:\Works\2023\NVIDIAImageScaling\samples\VK\include;F:\Works\2023\NVIDIAImageScaling\samples\third_party\imgui;F:\Works\2023\NVIDIAImageScaling\samples\third_party\imgui\backends;F:\Works\2023\NVIDIAImageScaling\samples\third_party\tinyexr;F:\Works\2023\NVIDIAImageScaling\samples\third_party\tinyexr\deps\miniz;F:\Works\2023\NVIDIAImageScaling\samples\third_party\stb;F:\Works\2023\NVIDIAImageScaling\samples\common;F:\Works\2023\NVIDIAImageScaling\samples\..\NIS;F:\Works\2023\NVIDIAImageScaling\samples\third_party\glfw\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/VulkanSDK/1.3.250.1/Include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NIS_VK_SAMPLE;NIS_DXC;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;NIS_VK_SAMPLE;NIS_DXC;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>F:\Works\2023\NVIDIAImageScaling\samples\VK\include;F:\Works\2023\NVIDIAImageScaling\samples\third_party\imgui;F:\Works\2023\NVIDIAImageScaling\samples\third_party\imgui\backends;F:\Works\2023\NVIDIAImageScaling\samples\third_party\tinyexr;F:\Works\2023\NVIDIAImageScaling\samples\third_party\tinyexr\deps\miniz;F:\Works\2023\NVIDIAImageScaling\samples\third_party\stb;F:\Works\2023\NVIDIAImageScaling\samples\common;F:\Works\2023\NVIDIAImageScaling\samples\..\NIS;F:\Works\2023\NVIDIAImageScaling\samples\third_party\glfw\include;C:\VulkanSDK\1.3.250.1\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>F:\Works\2023\NVIDIAImageScaling\samples\VK\include;F:\Works\2023\NVIDIAImageScaling\samples\third_party\imgui;F:\Works\2023\NVIDIAImageScaling\samples\third_party\imgui\backends;F:\Works\2023\NVIDIAImageScaling\samples\third_party\tinyexr;F:\Works\2023\NVIDIAImageScaling\samples\third_party\tinyexr\deps\miniz;F:\Works\2023\NVIDIAImageScaling\samples\third_party\stb;F:\Works\2023\NVIDIAImageScaling\samples\common;F:\Works\2023\NVIDIAImageScaling\samples\..\NIS;F:\Works\2023\NVIDIAImageScaling\samples\third_party\glfw\include;C:\VulkanSDK\1.3.250.1\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>					</Message>
+      <Command>setlocal
+C:\VulkanSDK\1.3.250.1\Bin\dxc.exe -D NIS_SCALER=1 -D NIS_BLOCK_HEIGHT=24 -spirv -T cs_6_2 -D NIS_DXC=1 -DNIS_USE_HALF_PRECISION=1 -D NIS_BLOCK_WIDTH=32 -D NIS_THREAD_GROUP_SIZE=256 -Fo nis_scaler.spv F:/Works/2023/NVIDIAImageScaling/samples/../NIS/NIS_Main.hlsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\VulkanSDK\1.3.250.1\Bin\dxc.exe -D NIS_SCALER=0 -D NIS_BLOCK_HEIGHT=32 -spirv -T cs_6_2 -D NIS_DXC=1 -DNIS_USE_HALF_PRECISION=1 -D NIS_BLOCK_WIDTH=32 -D NIS_THREAD_GROUP_SIZE=256 -Fo nis_sharpen.spv F:/Works/2023/NVIDIAImageScaling/samples/../NIS/NIS_Main.hlsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\VulkanSDK\1.3.250.1\Bin\glslc.exe -DNIS_SCALER=1 -DNIS_BLOCK_HEIGHT=24 -x glsl -DNIS_BLOCK_WIDTH=32 -DNIS_THREAD_GROUP_SIZE=256 -DNIS_USE_HALF_PRECISION=1 -DNIS_GLSL=1 -fshader-stage=comp -o nis_scaler_glsl.spv F:/Works/2023/NVIDIAImageScaling/samples/../NIS/NIS_Main.glsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\VulkanSDK\1.3.250.1\Bin\glslc.exe -DNIS_SCALER=0 -DNIS_BLOCK_HEIGHT=32 -x glsl -DNIS_BLOCK_WIDTH=32 -DNIS_THREAD_GROUP_SIZE=256 -DNIS_USE_HALF_PRECISION=1 -DNIS_GLSL=1 -fshader-stage=comp -o nis_sharpen_glsl.spv F:/Works/2023/NVIDIAImageScaling/samples/../NIS/NIS_Main.glsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory F:/Works/2023/NVIDIAImageScaling/samples/bin/VK/Debug/NIS
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory F:/Works/2023/NVIDIAImageScaling/samples/../NIS F:/Works/2023/NVIDIAImageScaling/samples/bin/VK/Debug/NIS
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different nis_scaler.spv F:/Works/2023/NVIDIAImageScaling/samples/bin/VK/Debug/NIS
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different nis_sharpen.spv F:/Works/2023/NVIDIAImageScaling/samples/bin/VK/Debug/NIS
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different nis_scaler_glsl.spv F:/Works/2023/NVIDIAImageScaling/samples/bin/VK/Debug/NIS
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different nis_sharpen_glsl.spv F:/Works/2023/NVIDIAImageScaling/samples/bin/VK/Debug/NIS
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory F:/Works/2023/NVIDIAImageScaling/samples/bin/VK/Debug/media/images
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory F:/Works/2023/NVIDIAImageScaling/samples/media/images F:/Works/2023/NVIDIAImageScaling/samples/bin/VK/Debug/media/images
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>..\third_party\glfw\src\Debug\glfw3.lib;C:\VulkanSDK\1.3.250.1\Lib\vulkan-1.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>F:/Works/2023/NVIDIAImageScaling/samples/build/VK/Debug/vk_sample.lib</ImportLibrary>
+      <ProgramDataBaseFile>F:/Works/2023/NVIDIAImageScaling/samples/bin/VK/Debug/vk_sample.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>F:\Works\2023\NVIDIAImageScaling\samples\VK\include;F:\Works\2023\NVIDIAImageScaling\samples\third_party\imgui;F:\Works\2023\NVIDIAImageScaling\samples\third_party\imgui\backends;F:\Works\2023\NVIDIAImageScaling\samples\third_party\tinyexr;F:\Works\2023\NVIDIAImageScaling\samples\third_party\tinyexr\deps\miniz;F:\Works\2023\NVIDIAImageScaling\samples\third_party\stb;F:\Works\2023\NVIDIAImageScaling\samples\common;F:\Works\2023\NVIDIAImageScaling\samples\..\NIS;F:\Works\2023\NVIDIAImageScaling\samples\third_party\glfw\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/VulkanSDK/1.3.250.1/Include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;NIS_VK_SAMPLE;NIS_DXC;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;NIS_VK_SAMPLE;NIS_DXC;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>F:\Works\2023\NVIDIAImageScaling\samples\VK\include;F:\Works\2023\NVIDIAImageScaling\samples\third_party\imgui;F:\Works\2023\NVIDIAImageScaling\samples\third_party\imgui\backends;F:\Works\2023\NVIDIAImageScaling\samples\third_party\tinyexr;F:\Works\2023\NVIDIAImageScaling\samples\third_party\tinyexr\deps\miniz;F:\Works\2023\NVIDIAImageScaling\samples\third_party\stb;F:\Works\2023\NVIDIAImageScaling\samples\common;F:\Works\2023\NVIDIAImageScaling\samples\..\NIS;F:\Works\2023\NVIDIAImageScaling\samples\third_party\glfw\include;C:\VulkanSDK\1.3.250.1\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>F:\Works\2023\NVIDIAImageScaling\samples\VK\include;F:\Works\2023\NVIDIAImageScaling\samples\third_party\imgui;F:\Works\2023\NVIDIAImageScaling\samples\third_party\imgui\backends;F:\Works\2023\NVIDIAImageScaling\samples\third_party\tinyexr;F:\Works\2023\NVIDIAImageScaling\samples\third_party\tinyexr\deps\miniz;F:\Works\2023\NVIDIAImageScaling\samples\third_party\stb;F:\Works\2023\NVIDIAImageScaling\samples\common;F:\Works\2023\NVIDIAImageScaling\samples\..\NIS;F:\Works\2023\NVIDIAImageScaling\samples\third_party\glfw\include;C:\VulkanSDK\1.3.250.1\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>					</Message>
+      <Command>setlocal
+C:\VulkanSDK\1.3.250.1\Bin\dxc.exe -D NIS_SCALER=1 -D NIS_BLOCK_HEIGHT=24 -spirv -T cs_6_2 -D NIS_DXC=1 -DNIS_USE_HALF_PRECISION=1 -D NIS_BLOCK_WIDTH=32 -D NIS_THREAD_GROUP_SIZE=256 -Fo nis_scaler.spv F:/Works/2023/NVIDIAImageScaling/samples/../NIS/NIS_Main.hlsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\VulkanSDK\1.3.250.1\Bin\dxc.exe -D NIS_SCALER=0 -D NIS_BLOCK_HEIGHT=32 -spirv -T cs_6_2 -D NIS_DXC=1 -DNIS_USE_HALF_PRECISION=1 -D NIS_BLOCK_WIDTH=32 -D NIS_THREAD_GROUP_SIZE=256 -Fo nis_sharpen.spv F:/Works/2023/NVIDIAImageScaling/samples/../NIS/NIS_Main.hlsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\VulkanSDK\1.3.250.1\Bin\glslc.exe -DNIS_SCALER=1 -DNIS_BLOCK_HEIGHT=24 -x glsl -DNIS_BLOCK_WIDTH=32 -DNIS_THREAD_GROUP_SIZE=256 -DNIS_USE_HALF_PRECISION=1 -DNIS_GLSL=1 -fshader-stage=comp -o nis_scaler_glsl.spv F:/Works/2023/NVIDIAImageScaling/samples/../NIS/NIS_Main.glsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\VulkanSDK\1.3.250.1\Bin\glslc.exe -DNIS_SCALER=0 -DNIS_BLOCK_HEIGHT=32 -x glsl -DNIS_BLOCK_WIDTH=32 -DNIS_THREAD_GROUP_SIZE=256 -DNIS_USE_HALF_PRECISION=1 -DNIS_GLSL=1 -fshader-stage=comp -o nis_sharpen_glsl.spv F:/Works/2023/NVIDIAImageScaling/samples/../NIS/NIS_Main.glsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory F:/Works/2023/NVIDIAImageScaling/samples/bin/VK/Release/NIS
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory F:/Works/2023/NVIDIAImageScaling/samples/../NIS F:/Works/2023/NVIDIAImageScaling/samples/bin/VK/Release/NIS
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different nis_scaler.spv F:/Works/2023/NVIDIAImageScaling/samples/bin/VK/Release/NIS
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different nis_sharpen.spv F:/Works/2023/NVIDIAImageScaling/samples/bin/VK/Release/NIS
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different nis_scaler_glsl.spv F:/Works/2023/NVIDIAImageScaling/samples/bin/VK/Release/NIS
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different nis_sharpen_glsl.spv F:/Works/2023/NVIDIAImageScaling/samples/bin/VK/Release/NIS
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory F:/Works/2023/NVIDIAImageScaling/samples/bin/VK/Release/media/images
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory F:/Works/2023/NVIDIAImageScaling/samples/media/images F:/Works/2023/NVIDIAImageScaling/samples/bin/VK/Release/media/images
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>..\third_party\glfw\src\Release\glfw3.lib;C:\VulkanSDK\1.3.250.1\Lib\vulkan-1.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>F:/Works/2023/NVIDIAImageScaling/samples/build/VK/Release/vk_sample.lib</ImportLibrary>
+      <ProgramDataBaseFile>F:/Works/2023/NVIDIAImageScaling/samples/bin/VK/Release/vk_sample.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>F:\Works\2023\NVIDIAImageScaling\samples\VK\include;F:\Works\2023\NVIDIAImageScaling\samples\third_party\imgui;F:\Works\2023\NVIDIAImageScaling\samples\third_party\imgui\backends;F:\Works\2023\NVIDIAImageScaling\samples\third_party\tinyexr;F:\Works\2023\NVIDIAImageScaling\samples\third_party\tinyexr\deps\miniz;F:\Works\2023\NVIDIAImageScaling\samples\third_party\stb;F:\Works\2023\NVIDIAImageScaling\samples\common;F:\Works\2023\NVIDIAImageScaling\samples\..\NIS;F:\Works\2023\NVIDIAImageScaling\samples\third_party\glfw\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/VulkanSDK/1.3.250.1/Include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;NIS_VK_SAMPLE;NIS_DXC;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;NIS_VK_SAMPLE;NIS_DXC;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>F:\Works\2023\NVIDIAImageScaling\samples\VK\include;F:\Works\2023\NVIDIAImageScaling\samples\third_party\imgui;F:\Works\2023\NVIDIAImageScaling\samples\third_party\imgui\backends;F:\Works\2023\NVIDIAImageScaling\samples\third_party\tinyexr;F:\Works\2023\NVIDIAImageScaling\samples\third_party\tinyexr\deps\miniz;F:\Works\2023\NVIDIAImageScaling\samples\third_party\stb;F:\Works\2023\NVIDIAImageScaling\samples\common;F:\Works\2023\NVIDIAImageScaling\samples\..\NIS;F:\Works\2023\NVIDIAImageScaling\samples\third_party\glfw\include;C:\VulkanSDK\1.3.250.1\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>F:\Works\2023\NVIDIAImageScaling\samples\VK\include;F:\Works\2023\NVIDIAImageScaling\samples\third_party\imgui;F:\Works\2023\NVIDIAImageScaling\samples\third_party\imgui\backends;F:\Works\2023\NVIDIAImageScaling\samples\third_party\tinyexr;F:\Works\2023\NVIDIAImageScaling\samples\third_party\tinyexr\deps\miniz;F:\Works\2023\NVIDIAImageScaling\samples\third_party\stb;F:\Works\2023\NVIDIAImageScaling\samples\common;F:\Works\2023\NVIDIAImageScaling\samples\..\NIS;F:\Works\2023\NVIDIAImageScaling\samples\third_party\glfw\include;C:\VulkanSDK\1.3.250.1\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>					</Message>
+      <Command>setlocal
+C:\VulkanSDK\1.3.250.1\Bin\dxc.exe -D NIS_SCALER=1 -D NIS_BLOCK_HEIGHT=24 -spirv -T cs_6_2 -D NIS_DXC=1 -DNIS_USE_HALF_PRECISION=1 -D NIS_BLOCK_WIDTH=32 -D NIS_THREAD_GROUP_SIZE=256 -Fo nis_scaler.spv F:/Works/2023/NVIDIAImageScaling/samples/../NIS/NIS_Main.hlsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\VulkanSDK\1.3.250.1\Bin\dxc.exe -D NIS_SCALER=0 -D NIS_BLOCK_HEIGHT=32 -spirv -T cs_6_2 -D NIS_DXC=1 -DNIS_USE_HALF_PRECISION=1 -D NIS_BLOCK_WIDTH=32 -D NIS_THREAD_GROUP_SIZE=256 -Fo nis_sharpen.spv F:/Works/2023/NVIDIAImageScaling/samples/../NIS/NIS_Main.hlsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\VulkanSDK\1.3.250.1\Bin\glslc.exe -DNIS_SCALER=1 -DNIS_BLOCK_HEIGHT=24 -x glsl -DNIS_BLOCK_WIDTH=32 -DNIS_THREAD_GROUP_SIZE=256 -DNIS_USE_HALF_PRECISION=1 -DNIS_GLSL=1 -fshader-stage=comp -o nis_scaler_glsl.spv F:/Works/2023/NVIDIAImageScaling/samples/../NIS/NIS_Main.glsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\VulkanSDK\1.3.250.1\Bin\glslc.exe -DNIS_SCALER=0 -DNIS_BLOCK_HEIGHT=32 -x glsl -DNIS_BLOCK_WIDTH=32 -DNIS_THREAD_GROUP_SIZE=256 -DNIS_USE_HALF_PRECISION=1 -DNIS_GLSL=1 -fshader-stage=comp -o nis_sharpen_glsl.spv F:/Works/2023/NVIDIAImageScaling/samples/../NIS/NIS_Main.glsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory F:/Works/2023/NVIDIAImageScaling/samples/bin/VK/MinSizeRel/NIS
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory F:/Works/2023/NVIDIAImageScaling/samples/../NIS F:/Works/2023/NVIDIAImageScaling/samples/bin/VK/MinSizeRel/NIS
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different nis_scaler.spv F:/Works/2023/NVIDIAImageScaling/samples/bin/VK/MinSizeRel/NIS
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different nis_sharpen.spv F:/Works/2023/NVIDIAImageScaling/samples/bin/VK/MinSizeRel/NIS
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different nis_scaler_glsl.spv F:/Works/2023/NVIDIAImageScaling/samples/bin/VK/MinSizeRel/NIS
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different nis_sharpen_glsl.spv F:/Works/2023/NVIDIAImageScaling/samples/bin/VK/MinSizeRel/NIS
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory F:/Works/2023/NVIDIAImageScaling/samples/bin/VK/MinSizeRel/media/images
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory F:/Works/2023/NVIDIAImageScaling/samples/media/images F:/Works/2023/NVIDIAImageScaling/samples/bin/VK/MinSizeRel/media/images
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>..\third_party\glfw\src\MinSizeRel\glfw3.lib;C:\VulkanSDK\1.3.250.1\Lib\vulkan-1.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>F:/Works/2023/NVIDIAImageScaling/samples/build/VK/MinSizeRel/vk_sample.lib</ImportLibrary>
+      <ProgramDataBaseFile>F:/Works/2023/NVIDIAImageScaling/samples/bin/VK/MinSizeRel/vk_sample.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>F:\Works\2023\NVIDIAImageScaling\samples\VK\include;F:\Works\2023\NVIDIAImageScaling\samples\third_party\imgui;F:\Works\2023\NVIDIAImageScaling\samples\third_party\imgui\backends;F:\Works\2023\NVIDIAImageScaling\samples\third_party\tinyexr;F:\Works\2023\NVIDIAImageScaling\samples\third_party\tinyexr\deps\miniz;F:\Works\2023\NVIDIAImageScaling\samples\third_party\stb;F:\Works\2023\NVIDIAImageScaling\samples\common;F:\Works\2023\NVIDIAImageScaling\samples\..\NIS;F:\Works\2023\NVIDIAImageScaling\samples\third_party\glfw\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/VulkanSDK/1.3.250.1/Include"</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;NIS_VK_SAMPLE;NIS_DXC;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;NIS_VK_SAMPLE;NIS_DXC;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>F:\Works\2023\NVIDIAImageScaling\samples\VK\include;F:\Works\2023\NVIDIAImageScaling\samples\third_party\imgui;F:\Works\2023\NVIDIAImageScaling\samples\third_party\imgui\backends;F:\Works\2023\NVIDIAImageScaling\samples\third_party\tinyexr;F:\Works\2023\NVIDIAImageScaling\samples\third_party\tinyexr\deps\miniz;F:\Works\2023\NVIDIAImageScaling\samples\third_party\stb;F:\Works\2023\NVIDIAImageScaling\samples\common;F:\Works\2023\NVIDIAImageScaling\samples\..\NIS;F:\Works\2023\NVIDIAImageScaling\samples\third_party\glfw\include;C:\VulkanSDK\1.3.250.1\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>F:\Works\2023\NVIDIAImageScaling\samples\VK\include;F:\Works\2023\NVIDIAImageScaling\samples\third_party\imgui;F:\Works\2023\NVIDIAImageScaling\samples\third_party\imgui\backends;F:\Works\2023\NVIDIAImageScaling\samples\third_party\tinyexr;F:\Works\2023\NVIDIAImageScaling\samples\third_party\tinyexr\deps\miniz;F:\Works\2023\NVIDIAImageScaling\samples\third_party\stb;F:\Works\2023\NVIDIAImageScaling\samples\common;F:\Works\2023\NVIDIAImageScaling\samples\..\NIS;F:\Works\2023\NVIDIAImageScaling\samples\third_party\glfw\include;C:\VulkanSDK\1.3.250.1\Include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>					</Message>
+      <Command>setlocal
+C:\VulkanSDK\1.3.250.1\Bin\dxc.exe -D NIS_SCALER=1 -D NIS_BLOCK_HEIGHT=24 -spirv -T cs_6_2 -D NIS_DXC=1 -DNIS_USE_HALF_PRECISION=1 -D NIS_BLOCK_WIDTH=32 -D NIS_THREAD_GROUP_SIZE=256 -Fo nis_scaler.spv F:/Works/2023/NVIDIAImageScaling/samples/../NIS/NIS_Main.hlsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\VulkanSDK\1.3.250.1\Bin\dxc.exe -D NIS_SCALER=0 -D NIS_BLOCK_HEIGHT=32 -spirv -T cs_6_2 -D NIS_DXC=1 -DNIS_USE_HALF_PRECISION=1 -D NIS_BLOCK_WIDTH=32 -D NIS_THREAD_GROUP_SIZE=256 -Fo nis_sharpen.spv F:/Works/2023/NVIDIAImageScaling/samples/../NIS/NIS_Main.hlsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\VulkanSDK\1.3.250.1\Bin\glslc.exe -DNIS_SCALER=1 -DNIS_BLOCK_HEIGHT=24 -x glsl -DNIS_BLOCK_WIDTH=32 -DNIS_THREAD_GROUP_SIZE=256 -DNIS_USE_HALF_PRECISION=1 -DNIS_GLSL=1 -fshader-stage=comp -o nis_scaler_glsl.spv F:/Works/2023/NVIDIAImageScaling/samples/../NIS/NIS_Main.glsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+C:\VulkanSDK\1.3.250.1\Bin\glslc.exe -DNIS_SCALER=0 -DNIS_BLOCK_HEIGHT=32 -x glsl -DNIS_BLOCK_WIDTH=32 -DNIS_THREAD_GROUP_SIZE=256 -DNIS_USE_HALF_PRECISION=1 -DNIS_GLSL=1 -fshader-stage=comp -o nis_sharpen_glsl.spv F:/Works/2023/NVIDIAImageScaling/samples/../NIS/NIS_Main.glsl
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory F:/Works/2023/NVIDIAImageScaling/samples/bin/VK/RelWithDebInfo/NIS
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory F:/Works/2023/NVIDIAImageScaling/samples/../NIS F:/Works/2023/NVIDIAImageScaling/samples/bin/VK/RelWithDebInfo/NIS
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different nis_scaler.spv F:/Works/2023/NVIDIAImageScaling/samples/bin/VK/RelWithDebInfo/NIS
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different nis_sharpen.spv F:/Works/2023/NVIDIAImageScaling/samples/bin/VK/RelWithDebInfo/NIS
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different nis_scaler_glsl.spv F:/Works/2023/NVIDIAImageScaling/samples/bin/VK/RelWithDebInfo/NIS
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_if_different nis_sharpen_glsl.spv F:/Works/2023/NVIDIAImageScaling/samples/bin/VK/RelWithDebInfo/NIS
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory F:/Works/2023/NVIDIAImageScaling/samples/bin/VK/RelWithDebInfo/media/images
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory F:/Works/2023/NVIDIAImageScaling/samples/media/images F:/Works/2023/NVIDIAImageScaling/samples/bin/VK/RelWithDebInfo/media/images
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>..\third_party\glfw\src\RelWithDebInfo\glfw3.lib;C:\VulkanSDK\1.3.250.1\Lib\vulkan-1.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>F:/Works/2023/NVIDIAImageScaling/samples/build/VK/RelWithDebInfo/vk_sample.lib</ImportLibrary>
+      <ProgramDataBaseFile>F:/Works/2023/NVIDIAImageScaling/samples/bin/VK/RelWithDebInfo/vk_sample.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="F:\Works\2023\NVIDIAImageScaling\samples\VK\src\AppRenderer.cpp" />
+    <ClCompile Include="F:\Works\2023\NVIDIAImageScaling\samples\VK\src\DeviceResources.cpp" />
+    <ClCompile Include="F:\Works\2023\NVIDIAImageScaling\samples\VK\src\NVScaler.cpp" />
+    <ClCompile Include="F:\Works\2023\NVIDIAImageScaling\samples\VK\src\NVSharpen.cpp" />
+    <ClCompile Include="F:\Works\2023\NVIDIAImageScaling\samples\VK\src\Sample.cpp" />
+    <ClCompile Include="F:\Works\2023\NVIDIAImageScaling\samples\common\Image.cpp" />
+    <ClCompile Include="F:\Works\2023\NVIDIAImageScaling\samples\VK\src\UIRenderer.cpp" />
+    <ClCompile Include="F:\Works\2023\NVIDIAImageScaling\samples\third_party\imgui\backends\imgui_impl_vulkan.cpp" />
+    <ClCompile Include="F:\Works\2023\NVIDIAImageScaling\samples\third_party\imgui\backends\imgui_impl_glfw.cpp" />
+    <ClCompile Include="F:\Works\2023\NVIDIAImageScaling\samples\third_party\imgui\imgui.cpp" />
+    <ClCompile Include="F:\Works\2023\NVIDIAImageScaling\samples\third_party\imgui\imgui_demo.cpp" />
+    <ClCompile Include="F:\Works\2023\NVIDIAImageScaling\samples\third_party\imgui\imgui_draw.cpp" />
+    <ClCompile Include="F:\Works\2023\NVIDIAImageScaling\samples\third_party\imgui\imgui_tables.cpp" />
+    <ClCompile Include="F:\Works\2023\NVIDIAImageScaling\samples\third_party\imgui\imgui_widgets.cpp" />
+    <ClCompile Include="F:\Works\2023\NVIDIAImageScaling\samples\third_party\tinyexr\deps\miniz\miniz.c" />
+    <ClInclude Include="F:\Works\2023\NVIDIAImageScaling\samples\VK\include\AppRenderer.h" />
+    <ClInclude Include="F:\Works\2023\NVIDIAImageScaling\samples\VK\include\DeviceResources.h" />
+    <ClInclude Include="F:\Works\2023\NVIDIAImageScaling\samples\VK\include\NVScaler.h" />
+    <ClInclude Include="F:\Works\2023\NVIDIAImageScaling\samples\VK\include\NVSharpen.h" />
+    <ClInclude Include="F:\Works\2023\NVIDIAImageScaling\samples\VK\include\UIRenderer.h" />
+    <ClInclude Include="F:\Works\2023\NVIDIAImageScaling\samples\VK\include\VKUtilities.h" />
+    <ClInclude Include="F:\Works\2023\NVIDIAImageScaling\samples\common\Utilities.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="F:\Works\2023\NVIDIAImageScaling\samples\build\third_party\glfw\src\glfw.vcxproj">
+      <Project>{0E415DE1-DCBB-3BB8-BD27-A5C8AC964594}</Project>
+      <Name>glfw</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,415 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{63EF7877-C68E-3812-AA19-6D71518689C0}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>dx11_sample</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">F:\Works\2023\NVIDIAImageScaling\samples\bin\DX11\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">dx11_sample.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">dx11_sample</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">F:\Works\2023\NVIDIAImageScaling\samples\bin\DX11\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">dx11_sample.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">dx11_sample</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">F:\Works\2023\NVIDIAImageScaling\samples\bin\DX11\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">dx11_sample.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">dx11_sample</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">F:\Works\2023\NVIDIAImageScaling\samples\bin\DX11\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">dx11_sample.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">dx11_sample</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>F:\Works\2023\NVIDIAImageScaling\samples\DX11\include;F:\Works\2023\NVIDIAImageScaling\samples\third_party\imgui;F:\Works\2023\NVIDIAImageScaling\samples\third_party\imgui\backends;F:\Works\2023\NVIDIAImageScaling\samples\third_party\tinyexr;F:\Works\2023\NVIDIAImageScaling\samples\third_party\tinyexr\deps\miniz;F:\Works\2023\NVIDIAImageScaling\samples\third_party\stb;F:\Works\2023\NVIDIAImageScaling\samples\..\NIS;F:\Works\2023\NVIDIAImageScaling\samples\common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UndefinePreprocessorDefinitions>MBCS</UndefinePreprocessorDefinitions>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_UNICODE;UNICODE;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;_UNICODE;UNICODE;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>F:\Works\2023\NVIDIAImageScaling\samples\DX11\include;F:\Works\2023\NVIDIAImageScaling\samples\third_party\imgui;F:\Works\2023\NVIDIAImageScaling\samples\third_party\imgui\backends;F:\Works\2023\NVIDIAImageScaling\samples\third_party\tinyexr;F:\Works\2023\NVIDIAImageScaling\samples\third_party\tinyexr\deps\miniz;F:\Works\2023\NVIDIAImageScaling\samples\third_party\stb;F:\Works\2023\NVIDIAImageScaling\samples\..\NIS;F:\Works\2023\NVIDIAImageScaling\samples\common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>F:\Works\2023\NVIDIAImageScaling\samples\DX11\include;F:\Works\2023\NVIDIAImageScaling\samples\third_party\imgui;F:\Works\2023\NVIDIAImageScaling\samples\third_party\imgui\backends;F:\Works\2023\NVIDIAImageScaling\samples\third_party\tinyexr;F:\Works\2023\NVIDIAImageScaling\samples\third_party\tinyexr\deps\miniz;F:\Works\2023\NVIDIAImageScaling\samples\third_party\stb;F:\Works\2023\NVIDIAImageScaling\samples\..\NIS;F:\Works\2023\NVIDIAImageScaling\samples\common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>	</Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory F:/Works/2023/NVIDIAImageScaling/samples/bin/DX11/Debug/NIS
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory F:/Works/2023/NVIDIAImageScaling/samples/../NIS F:/Works/2023/NVIDIAImageScaling/samples/bin/DX11/Debug/NIS
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory F:/Works/2023/NVIDIAImageScaling/samples/bin/DX11/Debug/media/images
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory F:/Works/2023/NVIDIAImageScaling/samples/media/images F:/Works/2023/NVIDIAImageScaling/samples/bin/DX11/Debug/media/images
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>F:/Works/2023/NVIDIAImageScaling/samples/build/DX11/Debug/dx11_sample.lib</ImportLibrary>
+      <ProgramDataBaseFile>F:/Works/2023/NVIDIAImageScaling/samples/bin/DX11/Debug/dx11_sample.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <Manifest>
+      <AdditionalManifestFiles>F:\Works\2023\NVIDIAImageScaling\samples\DX11\src\dpi.manifest;</AdditionalManifestFiles>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>F:\Works\2023\NVIDIAImageScaling\samples\DX11\include;F:\Works\2023\NVIDIAImageScaling\samples\third_party\imgui;F:\Works\2023\NVIDIAImageScaling\samples\third_party\imgui\backends;F:\Works\2023\NVIDIAImageScaling\samples\third_party\tinyexr;F:\Works\2023\NVIDIAImageScaling\samples\third_party\tinyexr\deps\miniz;F:\Works\2023\NVIDIAImageScaling\samples\third_party\stb;F:\Works\2023\NVIDIAImageScaling\samples\..\NIS;F:\Works\2023\NVIDIAImageScaling\samples\common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UndefinePreprocessorDefinitions>MBCS</UndefinePreprocessorDefinitions>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_UNICODE;UNICODE;NDEBUG;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_UNICODE;UNICODE;NDEBUG;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>F:\Works\2023\NVIDIAImageScaling\samples\DX11\include;F:\Works\2023\NVIDIAImageScaling\samples\third_party\imgui;F:\Works\2023\NVIDIAImageScaling\samples\third_party\imgui\backends;F:\Works\2023\NVIDIAImageScaling\samples\third_party\tinyexr;F:\Works\2023\NVIDIAImageScaling\samples\third_party\tinyexr\deps\miniz;F:\Works\2023\NVIDIAImageScaling\samples\third_party\stb;F:\Works\2023\NVIDIAImageScaling\samples\..\NIS;F:\Works\2023\NVIDIAImageScaling\samples\common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>F:\Works\2023\NVIDIAImageScaling\samples\DX11\include;F:\Works\2023\NVIDIAImageScaling\samples\third_party\imgui;F:\Works\2023\NVIDIAImageScaling\samples\third_party\imgui\backends;F:\Works\2023\NVIDIAImageScaling\samples\third_party\tinyexr;F:\Works\2023\NVIDIAImageScaling\samples\third_party\tinyexr\deps\miniz;F:\Works\2023\NVIDIAImageScaling\samples\third_party\stb;F:\Works\2023\NVIDIAImageScaling\samples\..\NIS;F:\Works\2023\NVIDIAImageScaling\samples\common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>	</Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory F:/Works/2023/NVIDIAImageScaling/samples/bin/DX11/Release/NIS
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory F:/Works/2023/NVIDIAImageScaling/samples/../NIS F:/Works/2023/NVIDIAImageScaling/samples/bin/DX11/Release/NIS
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory F:/Works/2023/NVIDIAImageScaling/samples/bin/DX11/Release/media/images
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory F:/Works/2023/NVIDIAImageScaling/samples/media/images F:/Works/2023/NVIDIAImageScaling/samples/bin/DX11/Release/media/images
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>F:/Works/2023/NVIDIAImageScaling/samples/build/DX11/Release/dx11_sample.lib</ImportLibrary>
+      <ProgramDataBaseFile>F:/Works/2023/NVIDIAImageScaling/samples/bin/DX11/Release/dx11_sample.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <Manifest>
+      <AdditionalManifestFiles>F:\Works\2023\NVIDIAImageScaling\samples\DX11\src\dpi.manifest;</AdditionalManifestFiles>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>F:\Works\2023\NVIDIAImageScaling\samples\DX11\include;F:\Works\2023\NVIDIAImageScaling\samples\third_party\imgui;F:\Works\2023\NVIDIAImageScaling\samples\third_party\imgui\backends;F:\Works\2023\NVIDIAImageScaling\samples\third_party\tinyexr;F:\Works\2023\NVIDIAImageScaling\samples\third_party\tinyexr\deps\miniz;F:\Works\2023\NVIDIAImageScaling\samples\third_party\stb;F:\Works\2023\NVIDIAImageScaling\samples\..\NIS;F:\Works\2023\NVIDIAImageScaling\samples\common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UndefinePreprocessorDefinitions>MBCS</UndefinePreprocessorDefinitions>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_UNICODE;UNICODE;NDEBUG;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_UNICODE;UNICODE;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>F:\Works\2023\NVIDIAImageScaling\samples\DX11\include;F:\Works\2023\NVIDIAImageScaling\samples\third_party\imgui;F:\Works\2023\NVIDIAImageScaling\samples\third_party\imgui\backends;F:\Works\2023\NVIDIAImageScaling\samples\third_party\tinyexr;F:\Works\2023\NVIDIAImageScaling\samples\third_party\tinyexr\deps\miniz;F:\Works\2023\NVIDIAImageScaling\samples\third_party\stb;F:\Works\2023\NVIDIAImageScaling\samples\..\NIS;F:\Works\2023\NVIDIAImageScaling\samples\common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>F:\Works\2023\NVIDIAImageScaling\samples\DX11\include;F:\Works\2023\NVIDIAImageScaling\samples\third_party\imgui;F:\Works\2023\NVIDIAImageScaling\samples\third_party\imgui\backends;F:\Works\2023\NVIDIAImageScaling\samples\third_party\tinyexr;F:\Works\2023\NVIDIAImageScaling\samples\third_party\tinyexr\deps\miniz;F:\Works\2023\NVIDIAImageScaling\samples\third_party\stb;F:\Works\2023\NVIDIAImageScaling\samples\..\NIS;F:\Works\2023\NVIDIAImageScaling\samples\common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>	</Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory F:/Works/2023/NVIDIAImageScaling/samples/bin/DX11/MinSizeRel/NIS
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory F:/Works/2023/NVIDIAImageScaling/samples/../NIS F:/Works/2023/NVIDIAImageScaling/samples/bin/DX11/MinSizeRel/NIS
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory F:/Works/2023/NVIDIAImageScaling/samples/bin/DX11/MinSizeRel/media/images
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory F:/Works/2023/NVIDIAImageScaling/samples/media/images F:/Works/2023/NVIDIAImageScaling/samples/bin/DX11/MinSizeRel/media/images
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>F:/Works/2023/NVIDIAImageScaling/samples/build/DX11/MinSizeRel/dx11_sample.lib</ImportLibrary>
+      <ProgramDataBaseFile>F:/Works/2023/NVIDIAImageScaling/samples/bin/DX11/MinSizeRel/dx11_sample.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <Manifest>
+      <AdditionalManifestFiles>F:\Works\2023\NVIDIAImageScaling\samples\DX11\src\dpi.manifest;</AdditionalManifestFiles>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>F:\Works\2023\NVIDIAImageScaling\samples\DX11\include;F:\Works\2023\NVIDIAImageScaling\samples\third_party\imgui;F:\Works\2023\NVIDIAImageScaling\samples\third_party\imgui\backends;F:\Works\2023\NVIDIAImageScaling\samples\third_party\tinyexr;F:\Works\2023\NVIDIAImageScaling\samples\third_party\tinyexr\deps\miniz;F:\Works\2023\NVIDIAImageScaling\samples\third_party\stb;F:\Works\2023\NVIDIAImageScaling\samples\..\NIS;F:\Works\2023\NVIDIAImageScaling\samples\common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UndefinePreprocessorDefinitions>MBCS</UndefinePreprocessorDefinitions>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_UNICODE;UNICODE;NDEBUG;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;_UNICODE;UNICODE;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>F:\Works\2023\NVIDIAImageScaling\samples\DX11\include;F:\Works\2023\NVIDIAImageScaling\samples\third_party\imgui;F:\Works\2023\NVIDIAImageScaling\samples\third_party\imgui\backends;F:\Works\2023\NVIDIAImageScaling\samples\third_party\tinyexr;F:\Works\2023\NVIDIAImageScaling\samples\third_party\tinyexr\deps\miniz;F:\Works\2023\NVIDIAImageScaling\samples\third_party\stb;F:\Works\2023\NVIDIAImageScaling\samples\..\NIS;F:\Works\2023\NVIDIAImageScaling\samples\common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>F:\Works\2023\NVIDIAImageScaling\samples\DX11\include;F:\Works\2023\NVIDIAImageScaling\samples\third_party\imgui;F:\Works\2023\NVIDIAImageScaling\samples\third_party\imgui\backends;F:\Works\2023\NVIDIAImageScaling\samples\third_party\tinyexr;F:\Works\2023\NVIDIAImageScaling\samples\third_party\tinyexr\deps\miniz;F:\Works\2023\NVIDIAImageScaling\samples\third_party\stb;F:\Works\2023\NVIDIAImageScaling\samples\..\NIS;F:\Works\2023\NVIDIAImageScaling\samples\common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PostBuildEvent>
+      <Message>	</Message>
+      <Command>setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory F:/Works/2023/NVIDIAImageScaling/samples/bin/DX11/RelWithDebInfo/NIS
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory F:/Works/2023/NVIDIAImageScaling/samples/../NIS F:/Works/2023/NVIDIAImageScaling/samples/bin/DX11/RelWithDebInfo/NIS
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory F:/Works/2023/NVIDIAImageScaling/samples/bin/DX11/RelWithDebInfo/media/images
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory F:/Works/2023/NVIDIAImageScaling/samples/media/images F:/Works/2023/NVIDIAImageScaling/samples/bin/DX11/RelWithDebInfo/media/images
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>F:/Works/2023/NVIDIAImageScaling/samples/build/DX11/RelWithDebInfo/dx11_sample.lib</ImportLibrary>
+      <ProgramDataBaseFile>F:/Works/2023/NVIDIAImageScaling/samples/bin/DX11/RelWithDebInfo/dx11_sample.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <Manifest>
+      <AdditionalManifestFiles>F:\Works\2023\NVIDIAImageScaling\samples\DX11\src\dpi.manifest;</AdditionalManifestFiles>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="F:\Works\2023\NVIDIAImageScaling\samples\DX11\src\Sample.cpp" />
+    <ClCompile Include="F:\Works\2023\NVIDIAImageScaling\samples\DX11\src\AppRenderer.cpp" />
+    <ClCompile Include="F:\Works\2023\NVIDIAImageScaling\samples\DX11\src\UIRenderer.cpp" />
+    <ClCompile Include="F:\Works\2023\NVIDIAImageScaling\samples\DX11\src\DeviceResources.cpp" />
+    <ClCompile Include="F:\Works\2023\NVIDIAImageScaling\samples\DX11\src\NVScaler.cpp" />
+    <ClCompile Include="F:\Works\2023\NVIDIAImageScaling\samples\DX11\src\NVSharpen.cpp" />
+    <ClCompile Include="F:\Works\2023\NVIDIAImageScaling\samples\DX11\src\BilinearUpscale.cpp" />
+    <ClCompile Include="F:\Works\2023\NVIDIAImageScaling\samples\common\Image.cpp" />
+    <ClCompile Include="F:\Works\2023\NVIDIAImageScaling\samples\third_party\imgui\backends\imgui_impl_dx11.cpp" />
+    <ClCompile Include="F:\Works\2023\NVIDIAImageScaling\samples\third_party\imgui\backends\imgui_impl_win32.cpp" />
+    <ClCompile Include="F:\Works\2023\NVIDIAImageScaling\samples\third_party\imgui\imgui.cpp" />
+    <ClCompile Include="F:\Works\2023\NVIDIAImageScaling\samples\third_party\imgui\imgui_demo.cpp" />
+    <ClCompile Include="F:\Works\2023\NVIDIAImageScaling\samples\third_party\imgui\imgui_draw.cpp" />
+    <ClCompile Include="F:\Works\2023\NVIDIAImageScaling\samples\third_party\imgui\imgui_tables.cpp" />
+    <ClCompile Include="F:\Works\2023\NVIDIAImageScaling\samples\third_party\imgui\imgui_widgets.cpp" />
+    <ClCompile Include="F:\Works\2023\NVIDIAImageScaling\samples\third_party\tinyexr\deps\miniz\miniz.c" />
+    <ClInclude Include="F:\Works\2023\NVIDIAImageScaling\samples\DX11\include\AppRenderer.h" />
+    <ClInclude Include="F:\Works\2023\NVIDIAImageScaling\samples\DX11\include\DeviceResources.h" />
+    <ClInclude Include="F:\Works\2023\NVIDIAImageScaling\samples\DX11\include\NVScaler.h" />
+    <ClInclude Include="F:\Works\2023\NVIDIAImageScaling\samples\DX11\include\NVSharpen.h" />
+    <ClInclude Include="F:\Works\2023\NVIDIAImageScaling\samples\DX11\include\UIRenderer.h" />
+    <ClInclude Include="F:\Works\2023\NVIDIAImageScaling\samples\DX11\include\BilinearUpscale.h" />
+    <ClInclude Include="F:\Works\2023\NVIDIAImageScaling\samples\DX11\include\DXUtilities.h" />
+    <ClInclude Include="F:\Works\2023\NVIDIAImageScaling\NIS\NIS_Config.h" />
+    <ClInclude Include="F:\Works\2023\NVIDIAImageScaling\samples\common\Image.h" />
+    <ClInclude Include="F:\Works\2023\NVIDIAImageScaling\samples\common\Utilities.h" />
+    <ClInclude Include="F:\Works\2023\NVIDIAImageScaling\NIS\NIS_Scaler.h" />
+    <Content Include="F:\Works\2023\NVIDIAImageScaling\NIS\NIS_Main.hlsl">
+      <CopyToOutputDirectory>TRUE</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

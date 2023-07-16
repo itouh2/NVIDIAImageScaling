@@ -11,29 +11,29 @@ cmake_install.cmake
 Makefile
 
 # VS
-*.vcxproj*
-*.sln
+# *.vcxproj*
+# *.sln
 .vs/
 
 # VS Code
 .vscode/
 
 # Shaders
-*.dxbc
-*.dxil
-*.spirv
-*.dxbc.h
-*.dxil.h
-*.spirv.h
+# *.dxbc
+# *.dxil
+# *.spirv
+# *.dxbc.h
+# *.dxil.h
+# *.spirv.h
 
 # Library
-*.lib
-*.exp
-*.dll
-*.pdb
-*.so
-*.so.*
-*.a
+# *.lib
+# *.exp
+# *.dll
+# *.pdb
+# *.so
+# *.so.*
+# *.a
 
 # except for third-party lib files
 !/samples/third_party/**
@@ -46,5 +46,5 @@ compile_commands.json
 *.log
 
 # packaged SDK
-samples/build
-samples/bin
+# samples/build
+# samples/bin

@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="F:\Works\2023\NVIDIAImageScaling\samples\DX12\src\Sample.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Works\2023\NVIDIAImageScaling\samples\DX12\src\AppRenderer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Works\2023\NVIDIAImageScaling\samples\DX12\src\UIRenderer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Works\2023\NVIDIAImageScaling\samples\DX12\src\DeviceResources.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Works\2023\NVIDIAImageScaling\samples\DX12\src\NVScaler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Works\2023\NVIDIAImageScaling\samples\DX12\src\NVSharpen.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Works\2023\NVIDIAImageScaling\samples\DX12\src\BilinearUpscale.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Works\2023\NVIDIAImageScaling\samples\common\Image.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Works\2023\NVIDIAImageScaling\samples\third_party\imgui\backends\imgui_impl_dx12.cpp">
+      <Filter>external</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Works\2023\NVIDIAImageScaling\samples\third_party\imgui\backends\imgui_impl_win32.cpp">
+      <Filter>external</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Works\2023\NVIDIAImageScaling\samples\third_party\imgui\imgui.cpp">
+      <Filter>external</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Works\2023\NVIDIAImageScaling\samples\third_party\imgui\imgui_demo.cpp">
+      <Filter>external</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Works\2023\NVIDIAImageScaling\samples\third_party\imgui\imgui_draw.cpp">
+      <Filter>external</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Works\2023\NVIDIAImageScaling\samples\third_party\imgui\imgui_tables.cpp">
+      <Filter>external</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Works\2023\NVIDIAImageScaling\samples\third_party\imgui\imgui_widgets.cpp">
+      <Filter>external</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\Works\2023\NVIDIAImageScaling\samples\third_party\tinyexr\deps\miniz\miniz.c">
+      <Filter>external</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="F:\Works\2023\NVIDIAImageScaling\samples\DX12\include\AppRenderer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Works\2023\NVIDIAImageScaling\samples\DX12\include\DeviceResources.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Works\2023\NVIDIAImageScaling\samples\DX12\include\NVScaler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Works\2023\NVIDIAImageScaling\samples\DX12\include\NVSharpen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Works\2023\NVIDIAImageScaling\samples\DX12\include\UIRenderer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Works\2023\NVIDIAImageScaling\samples\DX12\include\BilinearUpscale.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Works\2023\NVIDIAImageScaling\samples\DX12\include\DXUtilities.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Works\2023\NVIDIAImageScaling\samples\DX12\include\d3dx12.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Works\2023\NVIDIAImageScaling\NIS\NIS_Config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Works\2023\NVIDIAImageScaling\samples\common\Image.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Works\2023\NVIDIAImageScaling\samples\common\Utilities.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\Works\2023\NVIDIAImageScaling\NIS\NIS_Scaler.h">
+      <Filter>shaders</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="F:\Works\2023\NVIDIAImageScaling\NIS\NIS_Main.hlsl">
+      <Filter>shaders</Filter>
+    </Content>
+    <Content Include="F:\Works\2023\NVIDIAImageScaling\samples\DX12\src\bilinearUpscale.hlsl">
+      <Filter>shaders</Filter>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{87B3B34B-147C-3935-9613-E989B2D234A3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{8997C61E-087C-342D-A10C-CB35230E45FD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="external">
+      <UniqueIdentifier>{30E739DA-3679-35C1-9799-DE1AECC160C3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="shaders">
+      <UniqueIdentifier>{A35BE0AA-3828-3699-ABF3-EF003D7A0589}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
